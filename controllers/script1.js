@@ -49,18 +49,11 @@ app.controller("app", function($scope) {
         };
 
 
-        $scope.CompletedTasks = function() {
-            for (var i=0; i<$scope.todoTasks.length; i++) {
+        $scope.CompletedTasks = function(onetask) {
 
-                if (($scope.todoTasks[i].status) == true){
-                    
-                    $scope.completedTasks.push({'taskMessage':$scope.todoTasks[i].taskMessage, 'status':'true','input':'false'})
+            $scope.completedTasks.push({'taskMessage': onetask.taskMessage, 'status':'true','input':'false'})
+            $scope.todoTasks.splice($scope.todoTasks.indexOf(onetask), 1);
 
-                    $scope.todoTasks.splice(i,1); 
-
-                    i = i-1;         
-                }
-            }
             localStorage['tasksList'] = JSON.stringify($scope.todoTasks); 
             localStorage['tasksList1'] = JSON.stringify($scope.completedTasks); 
         }; 

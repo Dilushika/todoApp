@@ -3,7 +3,7 @@
 text-align: center;
 border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 height: 40px;
-background: #999;
+background: #000066;
 }
 
 .app-title {
@@ -23,8 +23,9 @@ font-size: 18px;
 
 
 span.done-true{
-	
-	font-style: italic;
+  
+ 
+  text-decoration: line-through;
 
 }
 
@@ -34,20 +35,24 @@ span.done-true{
   
   background: #00FFFF;
 
-}
-
-
-
-.done1-false{
-  
-  /*background: #98FB98;*/
 
 }
+
+
+
 
 .button{
   
-  background: #999;
+  background:  #000066;
   color: #fff;
+
+}
+
+.button1{
+  
+  
+  background :#00FFFF;
+ 
 
 }
 
@@ -66,7 +71,16 @@ span.done-true{
 
 
 span.inp-false{
-	visibility: hidden;
+  visibility: hidden;
+
+
+}
+
+
+
+.inp1-false{
+  background: #fff;
+  color:#333300;
 }
 
 
