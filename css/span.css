@@ -3,7 +3,7 @@
 text-align: center;
 border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 height: 40px;
-background: #000066;
+background: #008B8B;
 }
 
 .app-title {
@@ -43,7 +43,7 @@ span.done-true{
 
 .button{
   
-  background:  #000066;
+  background:  #008B8B;
   color: #fff;
 
 }
